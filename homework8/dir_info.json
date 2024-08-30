@@ -1,0 +1,100 @@
+[
+    {
+        "name": "task02",
+        "path": "C:\\Users\\malgu\\Desktop\\DeepPython\\homework8\\task02",
+        "type": "directory",
+        "size": 676,
+        "parent": "homework8"
+    },
+    {
+        "name": "task03",
+        "path": "C:\\Users\\malgu\\Desktop\\DeepPython\\homework8\\task03",
+        "type": "directory",
+        "size": 281,
+        "parent": "homework8"
+    },
+    {
+        "name": "task04",
+        "path": "C:\\Users\\malgu\\Desktop\\DeepPython\\homework8\\task04",
+        "type": "directory",
+        "size": 106,
+        "parent": "homework8"
+    },
+    {
+        "name": "task05",
+        "path": "C:\\Users\\malgu\\Desktop\\DeepPython\\homework8\\task05",
+        "type": "directory",
+        "size": 400,
+        "parent": "homework8"
+    },
+    {
+        "name": "dir_info.csv",
+        "path": "C:\\Users\\malgu\\Desktop\\DeepPython\\homework8\\dir_info.csv",
+        "type": "file",
+        "size": 28,
+        "parent": "homework8"
+    },
+    {
+        "name": "dir_info.json",
+        "path": "C:\\Users\\malgu\\Desktop\\DeepPython\\homework8\\dir_info.json",
+        "type": "file",
+        "size": 2,
+        "parent": "homework8"
+    },
+    {
+        "name": "dir_info.pickle",
+        "path": "C:\\Users\\malgu\\Desktop\\DeepPython\\homework8\\dir_info.pickle",
+        "type": "file",
+        "size": 5,
+        "parent": "homework8"
+    },
+    {
+        "name": "task01.py",
+        "path": "C:\\Users\\malgu\\Desktop\\DeepPython\\homework8\\task01.py",
+        "type": "file",
+        "size": 2788,
+        "parent": "homework8"
+    },
+    {
+        "name": "employees1.json",
+        "path": "C:\\Users\\malgu\\Desktop\\DeepPython\\homework8\\task02\\employees1.json",
+        "type": "file",
+        "size": 277,
+        "parent": "task02"
+    },
+    {
+        "name": "employees2.json",
+        "path": "C:\\Users\\malgu\\Desktop\\DeepPython\\homework8\\task02\\employees2.json",
+        "type": "file",
+        "size": 260,
+        "parent": "task02"
+    },
+    {
+        "name": "employees3.json",
+        "path": "C:\\Users\\malgu\\Desktop\\DeepPython\\homework8\\task02\\employees3.json",
+        "type": "file",
+        "size": 139,
+        "parent": "task02"
+    },
+    {
+        "name": "products.json",
+        "path": "C:\\Users\\malgu\\Desktop\\DeepPython\\homework8\\task03\\products.json",
+        "type": "file",
+        "size": 281,
+        "parent": "task03"
+    },
+    {
+        "name": "sales.csv",
+        "path": "C:\\Users\\malgu\\Desktop\\DeepPython\\homework8\\task04\\sales.csv",
+        "type": "file",
+        "size": 106,
+        "parent": "task04"
+    },
+    {
+        "name": "students.json",
+        "path": "C:\\Users\\malgu\\Desktop\\DeepPython\\homework8\\task05\\students.json",
+        "type": "file",
+        "size": 400,
+        "parent": "task05"
+    }
+]
