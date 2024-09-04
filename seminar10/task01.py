@@ -6,7 +6,7 @@
 У класса должно быть два метода, возвращающие длину
 окружности и её площадь.
 """
-import math
+from math import pi
 
 
 class Circle:
@@ -15,13 +15,13 @@ class Circle:
         self.radius = radius
 
     def length(self):
-        return 2 * math.pi * self.radius
+        return 2 * pi * self.radius
 
-    def square(self):
-        return math.pi * self.radius ** 2
+    def area(self):
+        return pi * self.radius ** 2
 
 
 if __name__ == '__main__':
     circle = Circle(5)
     print(f'Длина окружности = {circle.length()}')
-    print(f'Площадь окружности = {circle.square()}')
+    print(f'Площадь окружности = {circle.area()}')

@@ -43,12 +43,12 @@ class Rectangle:
     def perimeter(self):
         return 2 * (self.__width + self.__length)
 
-    def square(self):
+    def area(self):
         return self.__length * self.__width
 
 
 if __name__ == '__main__':
     rectangle = Rectangle(10, 5)
-    print(f'Периметр прямоугольника равен {rectangle.perimeter()}\nПлощадь прямоугольника равна {rectangle.square()}')
+    print(f'Периметр прямоугольника равен {rectangle.perimeter()}\nПлощадь прямоугольника равна {rectangle.area()}')
     rectangle1 = Rectangle(5)
-    print(f'Периметр прямоугольника равен {rectangle1.perimeter()}\nПлощадь прямоугольника равна {rectangle1.square()}')
+    print(f'Периметр прямоугольника равен {rectangle1.perimeter()}\nПлощадь прямоугольника равна {rectangle1.area()}')

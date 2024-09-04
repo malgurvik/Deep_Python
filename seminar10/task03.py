@@ -45,7 +45,8 @@ class Person:
         self.__name = value
 
 
-p = Person("Иван", 33, "1-234-567-8901")
-print(f"{p.name} / {p.age} / {p.phone}")
-p.birthday()
-print(f"{p.name} / {p.age} / {p.phone}")
+if __name__ == '__main__':
+    p = Person("Иван", 33, "1-234-567-8901")
+    print(f"{p.name} / {p.age} / {p.phone}")
+    p.birthday()
+    print(f"{p.name} / {p.age} / {p.phone}")
