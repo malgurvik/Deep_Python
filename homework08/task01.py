@@ -69,4 +69,4 @@ def main(directory):
 
 
 if __name__ == '__main__':
-    main('C:\\Users\\malgu\\Desktop\\DeepPython\\homework8')
+    main('C:\\Users\\malgu\\Desktop\\DeepPython\\homework08')

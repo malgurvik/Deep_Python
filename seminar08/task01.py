@@ -10,7 +10,7 @@
 
 import json
 
-file_name = 'C:\\Users\\malgu\\Desktop\\DeepPython\\seminar7\\task03.txt'
+file_name = '/seminar07\\task03.txt'
 json_name = 'task01.json'
 
 

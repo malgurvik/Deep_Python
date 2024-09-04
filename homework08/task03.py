@@ -21,4 +21,4 @@ def json_to_csv(json_file, csv_file):
 
 
 if __name__ == "__main__":
-    json_to_csv('C:\\Users\\malgu\\Desktop\\DeepPython\\homework8\\task03\\products.json', 'products.csv')
+    json_to_csv('/homework08\\task03\\products.json', 'products.csv')

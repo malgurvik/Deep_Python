@@ -32,5 +32,5 @@ def calculate_total_sales(input_file, output_file):
 
 
 if __name__ == "__main__":
-    calculate_total_sales('C:\\Users\\malgu\\Desktop\\DeepPython\\homework8\\task04\\sales.csv',
+    calculate_total_sales('/homework08\\task04\\sales.csv',
                           'total_sales.csv')
