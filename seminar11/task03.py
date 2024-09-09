@@ -3,7 +3,6 @@
 Добавьте к задачам 1 и 2 строки документации для классов.
 """
 
-
 import time
 
 
@@ -25,11 +24,14 @@ class MyString(str):
         return f"MyString('{self}', author='{self.author}', creation_time={self.creation_time})"
 
 
-
 class Archive:
-    "Класс для хранения пары свойств и сохранения истории."
+    """Класс для хранения пары свойств и сохранения истории."""
+
+    strings_archive = None
+    numbers_archive = None
+
     def __init__(self, number, string):
-        "Инициализирует новый экземпляр класса Archive."
+        """Инициализирует новый экземпляр класса Archive."""
         self.number = number
         self.string = string
 

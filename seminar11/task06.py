@@ -4,8 +4,10 @@
 Добавьте сравнение прямоугольников по площади
 Должны работать все шесть операций сравнения
 """
+from functools import total_ordering  # При использовании достаточно написать пару методов сравнения(__gt__ и __eq__)
 
 
+@total_ordering
 class Rectangle:
     def __init__(self, length, width=None):
         self.length = length
@@ -18,6 +20,9 @@ class Rectangle:
     def get_area(self):
         return self.length * self.width
 
+    def __str__(self):
+        return f'Perimeter = {self.get_perimeter()}\nArea = {self.get_area()}'
+
     def __add__(self, other):
         new_perimeter = self.get_perimeter() + other.get_perimeter()
         return Rectangle(new_perimeter / 4)
@@ -28,23 +33,23 @@ class Rectangle:
             return Rectangle(0)
         return Rectangle(new_perimeter / 4)
 
-    def __lt__(self, other):
-        return self.get_area() < other.get_area()
+    # def __lt__(self, other):
+    #     return self.get_area() < other.get_area()
 
-    def __le__(self, other):
-        return self.get_area() <= other.get_area()
-
+    # def __le__(self, other):
+    #     return self.get_area() <= other.get_area()
+    #
     def __eq__(self, other):
         return self.get_area() == other.get_area()
 
-    def __ne__(self, other):
-        return self.get_area() != other.get_area()
+    # def __ne__(self, other):
+    #     return self.get_area() != other.get_area()
 
     def __gt__(self, other):
         return self.get_area() > other.get_area()
 
-    def __ge__(self, other):
-        return self.get_area() >= other.get_area()
+    # def __ge__(self, other):
+    #     return self.get_area() >= other.get_area()
 
 
 if __name__ == '__main__':
@@ -61,7 +66,10 @@ if __name__ == '__main__':
     print(rectangle1 >= rectangle2)
 
     rectangle3 = Rectangle(5, 10)
+    print(rectangle1)
+    print(rectangle3)
     print(rectangle1 == rectangle3)
 
     print(type(rectangle1.get_perimeter))
     print(type(print))
+

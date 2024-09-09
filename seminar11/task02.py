@@ -35,7 +35,8 @@ class Archive:
         # Archive.numbers_archive.append(number)
         # Archive.strings_archive.append(string)
 
-    def get_archive(self):
+    @staticmethod
+    def get_archive():
         return list(zip(Archive.numbers_archive, Archive.strings_archive))
 
 
