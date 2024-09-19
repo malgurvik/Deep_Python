@@ -17,6 +17,6 @@ def get_dict_value(my_dict, my_key, default_value=None):
 
 
 if __name__ == '__main__':
-    my_dict = {1: 'one', 2: 'two'}
-    print(get_dict_value(my_dict, 1))
-    print(get_dict_value(my_dict, 3))
+    dct = {1: 'one', 2: 'two'}
+    print(get_dict_value(dct, 1))
+    print(get_dict_value(dct, 3))

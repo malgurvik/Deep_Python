@@ -10,33 +10,52 @@
 из JSON файла и формирует множество пользователей.
 """
 
-from json import load, dump
+import json
 
 
 class User:
-    def __init__(self, name, user_id, level) -> None:
+    def __init__(self, name, user_id, user_lvl):
         self.name = name
-        self.user_id = user_id
-        self.level = level
+        self.id = user_id
+        self.level = user_lvl
 
-    def __eq__(self, other):
-        return self.name == other.name
-
-    def __str__(self):
-        return f'User:{self.name}, id:{self.user_id}, level:{self.level}'
+    def __repr__(self):
+        return f'{self.name} ({self.id}, {self.level})'
 
 
-users = set()
+def load_users(path: str) -> set[User]:
+    result = set()
+    with open(path, 'r', encoding='UTF-8') as file_json:
+        for level, user in json.load(file_json).items():
+            for user_id, name in user.items():
+                result.add(User(name, user_id, level))
+    return result
 
 
-def load_users(path):
-    with open(path, encoding='utf-8') as f:
-        data = load(f)
-    for level, value in data.items():
-        for id, name in value.items():
-            users.add(User(name, id, level))
-
-
+# class User:
+#     def __init__(self, name, user_id, level) -> None:
+#         self.name = name
+#         self.user_id = user_id
+#         self.level = level
+#
+#     def __eq__(self, other):
+#         return self.name == other.name
+#
+#     def __str__(self):
+#         return f'User:{self.name}, id:{self.user_id}, level:{self.level}'
+#
+#
+# users = set()
+#
+#
+# def load_users(path):
+#     with open(path, encoding='utf-8') as f:
+#         data = load(f)
+#     for level, value in data.items():
+#         for id, name in value.items():
+#             users.add(User(name, id, level))
+#
+#
 if __name__ == '__main__':
-    load_users('json_file.json')
-    print(*users, sep='\n')
+    a = load_users('json_file.json')
+    print(a)
