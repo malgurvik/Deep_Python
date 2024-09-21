@@ -1,0 +1,3 @@
+INFO:__main__:2.0: (), {'num1': 10, 'num2': 5}
+ERROR:__main__:division by zero
+INFO:__main__:None: (10, 0), {}
